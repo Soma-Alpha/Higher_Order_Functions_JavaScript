@@ -12,18 +12,12 @@ End result should resemble: console.log(plus15(10)) // Outputs 25
                
 */
 
-function HOFunc(num){
-
-    return function(newNum){
-        return num + newNum;
-    }
-
+function HOFunc(num) {
+  return function (newNum) {
+    return num + newNum;
+  };
 }
 
-let value = HOFunc(80); 
-//    function value(newNum){
-//     return num + newNum;
-//    }
-
+let value = HOFunc(80);
 
 console.log(value(700));
